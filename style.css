@@ -1,70 +1,106 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  background-color: #5f43b2;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-header {
-  margin: 0;
-  font-family: NEXA, sans-serif;
-  background-color: #5f43b2;
-  color: white;
-  min-height: 50vh;
-  padding: 0px;
-}
-
-.main-heading {
-  max-width: 800px;
-  text-align: center;
-  margin: auto;
-}
-.main-heading h1 {
-  font-size: 50px;
-  font-family: ;
-}
-.main-heading p {
-  font-size: 18px;
-  line-height: 26px;
-}
-.header {
-  overflow: hidden;
-  background-color: #49347e;
-  padding: 10px 20px;
-}
-.header img {
-  width: 50px;
-}
-.header a {
-  float: left;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-.header-right {
-  float: right;
+nav {
+  height: 80px;
+  background: black;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0rem calc(100vw-1300px) / 2;
 }
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.logo {
+  color: black;
 
-  .header-right {
-    float: none;
-  }
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 2rem;
 }
-
-.about h2 {
-  font-size: 60px;
+nav a {
+  text-decoration: none;
   color: white;
-  font-family: nexa, sans-serif;
+  padding: 0 2rem;
+}
+nav a:hover {
+  color: yellow;
+}
+nav button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background: #black;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+nav button:hover {
+  background: yellow;
+  color: black;
+}
+.hero {
+  background: url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc(100vw-1300px) / 2;
+}
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background: #black;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ffff;
+  color: #000;
+}
+
+.colum-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 #logout {
