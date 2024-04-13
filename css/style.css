@@ -34,7 +34,7 @@ nav a:hover {
 nav button {
   padding: 1rem 3rem;
   font-size: 1rem;
-  background: black;
+  background: white;
   color: #000;
   border: none;
   border-radius: 50px;
@@ -45,7 +45,7 @@ nav button:hover {
   color: black;
 }
 .hero {
-  background: url("assets/background.jpg");
+  background: url("../assets/background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -84,7 +84,7 @@ button {
   font-weight: bold;
 }
 button:hover {
-  background: #ffff;
+  background: yellow;
   color: #000;
 }
 
